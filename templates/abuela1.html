@@ -1,0 +1,918 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<body> 
+<!-- Introduction -->
+<div class="container">
+  <div class="jumbotron" id='first'>
+    <h1>Se llama Margarita Perez</h1> 
+    <p>Usted es una abuela de un nieto desaparecido. Hace quince años que su hija y su esposo desaparecen. Era enero cuando ocurrió y su hija estaba cinco meses embarazada. Ahora quiere intensificar su búsqueda para tratar de reconectar con su nieto/a y ganar la justicia para su propia familia. </p> 
+      <a onclick="myFunction('first','abuela1')"type="button" class="btn btn-primary btn-lg center-block">Haz click aqui para empezar su busqueda!</a> 
+  </div>
+</div>
+
+
+
+<div id="abuela1" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora tiene que hacer la decisión de cómo va a hacer la búsqueda. Reciente ha visto muchas de las mismas advertencias de otra familia que busca su familiar. Piensa que este puede funcionar, pero no puede compartir muchos detalles de su propia familia. También, ha leído algunas historietas de otras familias. En estas, se puede compartir más información, pero no tantos personas la verán. En este momento sabe que necesita hacer algo, selecciona cual forma de comunicación quiere usar.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela1','abuela2a')" class="btn btn-primary btn-lg center-block">Hacer una advertencia</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela1','abuela2b')" class="btn btn-primary btn-lg center-block">Crear una historia</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela2a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hace dos meses que su póster expone en las calles de la ciudad. La agencia con que trabajaba dice que algunas personas han llamado la agencia para más información, pero desafortunadamente los detalles de las edades no corresponden con las de su propio nieto.</p>
+      <p>Es una situación frustrante, pero tiene que perseverar. Decidió continuar a exponer la advertencia porque aun si no ayuda a reconectar a su familia, si puede funcionar para reconectar otra familia se vale la pena. </p>
+      <p>En la mayoría, trabaja solo con su esposo para tratar de encontrarlo. Ahora, decide que necesita unirse con otros para fortalecer su búsqueda. En este momento, quiere decidir si quiere contactar a los otros abuelos de su nieto o a la comunidad de las abuelas de plaza del mayo. (Sabe que puede encontrar los otros abuelos porque se conocieron muchas veces cuando su hija y su hijo se casaron) </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela2a','abuela3a')" class="btn btn-primary btn-lg center-block">La otra pareja</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela2a','abuela3b')" class="btn btn-primary btn-lg center-block">Las abuelas de Plaza de Mayo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela3a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Usa la información que tiene del pasado para reconectar con los padres de su yerno. Ahora solo su madre está viva y ella participa mucho en las protestas y en la campaña de las abuelas de plaza del mayo. Ahora tiene que seguir con la consideración de la opinión de ella también. </p>
+      <p>Ella cree en la esfuerza de la comunidad de las madres y piensa que su investigación colectiva será más fuerte si mantener la fuerte conexión con las otras abuelas. Ella le invita a la protesta para el próximo jueves. ¿Quiere ir?</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela3a','abuela4a')" class="btn btn-primary btn-lg center-block">Sí</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela3a','abuela4b')" class="btn btn-primary btn-lg center-block">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela4a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Esto es una experiencia nueva para usted porque en el pasado no quería participar en estos eventos porque no piensa que puede ayudar a acercar la reunión. Sin embargo, su participación fortaleza su relación con la madre de su yerno y la comunidad se da más esperanza.</p>
+      <p>Ahora decide que en vez de esperar para la llamada de un adolescente, decide tratar de localizar algunos nietos posibles. Este es un trabajo acuciante y no sabe exactamente donde debe empezar. Por eso, necesita decidir si quiere ir al hospital con otras abuelas o hablar con un abogado que ha ayudado a otras abuelas. (Debe considerar el costo de un abogado.)</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela4a','abuela5a')" class="btn btn-primary btn-lg center-block">Al hospital</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela4a','abuela5b')" class="btn btn-primary btn-lg center-block">Un abogado</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela5a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hoy es el día en que va al hospital con dos abuelas que se conocieron durante una marcha de abuelas. La información que tiene de su nieto es que probablemente nació cerca del siete de mayo y por eso busca información sobre bebes que nacieron cerca de este dato. No hay mucha que puede encontrar pero busca información y detalles sospechosas.</p>
+      <p>Otra vez este parece como una búsqueda para encontrar otros nietos, pero no su propio nieto porque hay un montón de información.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="myFunction('abuela5a','abuela6a')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="abuela6a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hace 2 meses que empieza a buscar información en el hospital. Por sorpresa, un juez le llamó hoy en día para programar una cita para discutir algo importante. Él no dio más información sobre el teléfono pero piensa que es posible que es algo más o menos bueno.</p>
+      <p>Decide llamar a la abuela de su yerno también para venir con usted a la cita. Desafortunadamente, tiene que esperar una semana para la cita.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="myFunction('abuela6a','abuela7a')" class="btn btn-primary btn-lg center-block">Una semana después</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="abuela7a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hoy es el día cuando tiene una cita con el juez. Es muy ansiosa porque los detalles de esta cita pueden cambiar su mundo. Cuando finalmente llegan a la oficina del juez, él les dice que hay una chica de quince años que fue adoptado por un general del militar y que ella probablemente es su nieta. </p>
+      <p>Aunque se saben dónde ella viva y donde asiste a la escuela, no pueden contactarla todavía. Ellos necesitan el ADN de todos los abuelos antes de que pueden confirmar su identidad y compartir más información sobre la chica. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="myFunction('abuela7a','abuela8a')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="abuela8a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Durante la próxima semana cuando anticipa los resultados, tiene que considerar el tipo de relación que quiere con su nieta. También, hay la consideración de la familia de su yerno también y sus deseos. La madre de su yerno piensa que sin duda debe remover su nieta de su familia de crianza. ¿Qué piensa usted? </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela8a','abuela9a')" class="btn btn-primary btn-lg center-block">Está de acuerda</button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela8a','abuela9b')" class="btn btn-primary btn-lg center-block">Espera hasta conocer la familia</button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela8a','abuela9c')" class="btn btn-primary btn-lg center-block">Considera la opinión de su nieta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela9a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Es una buena idea de estar de acuerdo con la otra abuela. Ahora tiene que considerar donde su nieta vivirá cuando (o si) viene de sus padres actuales. Su tiene un dormitorio extra en su casa donde ella puede vivir, pero el hermano de su yerno también tiene un dormitorio extra. Él también tiene algunos hijos cerca de la edad de su nieta. Tiene que pensar si este pueda ser un hogar mejor para ella. ¿Qué piensa?</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9a','abuela10a')" class="btn btn-primary btn-lg center-block">Su casa</button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9a','abuela10b')" class="btn btn-primary btn-lg center-block">Con la otra familia </button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9a','abuela10c')" class="btn btn-primary btn-lg center-block">Deja la decisión para su nieta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10a','abuela11a', 'abuela11b')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Desafortunadamente, la chica no es su nieta. Obviamente, estas noticias complican a su situación y su búsqueda. Tiene que hacer la decisión difícil de mantener su actitud positiva y tratar de ver algo bueno de la situación.</p>
+      <p>Ahora las autoridades saben que esta chica no es la hija biológica de sus padres de crianza. A causa de tiene muchas conexiones con las otras abuelas, tiene el poder de tratar de encontrar la familia biológica de esta chica. Hay la tentación de dejar la situación y continuar su propia búsqueda porque ya está cansada. ¿Qué quiere hacer?</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11a','abuela12a')" class="btn btn-primary btn-lg center-block">Ayuda al juez</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11a','abuela12b')" class="btn btn-primary btn-lg center-block">Deja la situación</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que puede ir a su escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa para sacarla de su casa actual </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11b','abuela12c')" class="btn btn-primary btn-lg center-block">Su escuela</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11b','abuela12d')" class="btn btn-primary btn-lg center-block">Su casa</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela12a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Usa sus conexiones para extenderse lo que saben sobre esta nieta por la comunidad de las abuelas. No hay una confirmación positiva todavía. Todos continúan su búsqueda y tratan de mantener la esperanza.</p>
+    </div>
+
+    <h1 align="center">¡Gracias por su participación!</h1>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="abuela12b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Deja la situación con una poca desilusión y necesita tomar un descanso de su búsqueda. Tal vez después de un tiempo pueda regresar a su búsqueda con aún más esfuerza. </p>
+      
+    </div>
+      <h1 align="center">¡Gracias por su participación!</h1>
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="abuela12c" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hace una semana que reciben los resultados del examen y es el día cuando el juez va a la escuela de su nieta. Espera con mucha anticipación. </p>
+      <p>Ella llega al palacio de justicia con el juez y con mucha confusión. Ella no sabe todos los detalles de lo que pasa. Usted trata de presentarle a ella. No habla mucha, pero aprende que ella se llama Sofía. A pesar de que no es la reunión que imaginaba, es un momento especial. </p>
+      <p>Como decidieron antes, ella vivirá con usted en su casa porque tiene un dormitorio de repuesto. Aunque ella está en su custodia por el momento, hay mucho que tiene que hacer en los meses que vienen. </p>
+      <p>Sofía dice que quiere regresar a su escuela actual mañana. Tiene que decidir si va a permitirlo. Si ella regresa, hay la posibilidad que ella va a desaparecer. También, no quiere separarla repentinamente de sus amigas y todo lo que conoce. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela12c','abuela13a')" class="btn btn-primary btn-lg center-block">Regresa a la escuela</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela12c','abuela13b')" class="btn btn-primary btn-lg center-block">No regresa a la escuela</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela13a" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Decide conceder sus deseos de regresar para mantener una relación más o menos positiva. Ahora ella está en la escuela por el día. No sabe exactamente que vendrá en el futuro, pero tiene esperanza que puede reconciliar la situación. </p>
+    </div>
+
+    <h1 align="center">¡Gracias por su participación!</h1>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela13b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>En vez de regresar a su escuela, piensa que es mejor si ella se queda en casa con usted hoy. Decide traerla a la casa de su hermana para que ella puede conocerse a otros miembros de la familia. </p>
+      <p>Ella todavía está descontenta con la situación y no quiere creer en la verdad. Como no ha considerado suficiente antes, tiene que pensar más en los deseos de su nieta. Ahora tiene que tomar algún tiempo de reconsiderar como va a seguir. </p>
+    </div>
+
+    <h1 align="center">¡Gracias por su participación!</h1>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela12d" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>El día cuando decidieron ir a la casa de su nieta, estaba lleno de confusión y desorden. En vez de una reunión contenta, la madre de crianza se resiste al juez y las otras autoridades. A causa de la actitud de la madre, su nieta también se resiste al juez y no quiere creer la verdad. </p>
+
+      <p>Ahora, sí, tiene la custodia de su nieta, pero ella no quiere hablar con usted. Decide tener paciencia y darle espacio hasta que ella está más lista para hablar y reconsiderar las consecuencias de la situación. </p>
+    </div>
+
+    <h1 align="center">¡Gracias por su participación!</h1>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10b','abuela11a', 'abuela11c')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="abuela11c" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11c','abuela12e')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11c','abuela12f')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela12e" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hace una semana que reciben los resultados del examen y es el día cuando el juez va a la escuela de su nieta. Espera con mucha anticipación. </p>
+      <p>Ella llega al palacio de justicia con el juez y con mucha confusión. Ella no sabe todos los detalles de lo que pasa. Usted trata de presentarle a ella. No habla mucha, pero aprende que ella se llama Sofía. A pesar de que no es la reunión que imaginaba, es un momento especial. </p>
+      <p>Como decidieron antes, ella vivirá con la madre de su yerno. Porque ella está muy anulada de la situación, decide darle espacio para algunos días. Espera hasta escucha más información de la familia de su yerno sobre lo que pasará.  </p>
+    </div>
+
+    <div class='row'>
+      <h1 align="center">¡Gracias por su participación!</h1>
+        <div class = 'col-sm-12'>
+        <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="abuela12f" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Porque decide ir a la casa de su nieta hoy en día, el día estaba lleno de confusión y desorden. En vez de una reunión contenta, la madre de crianza se resiste al juez y las otras autoridades. A causa de la actitud de la madre, su nieta también se resiste al juez y no quiere creer la verdad.  </p>
+      <p>Ahora, la madre de su yerno tiene la custodia de su nieta, pero ella, Sofía, no quiere hablar con los familiares. Decide tener paciencia y darle espacio hasta que ella está más lista para hablar y reconsiderar las consecuencias de la situación. </p>
+    </div>
+
+    <div class='row'>
+      <h1 align="center">¡Gracias por su participación!</h1>
+
+      <div class='row'>
+        <div class = 'col-sm-12'>
+        <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10c" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10c','abuela11a', 'abuela11d')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11d" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual.  </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11d','abuela12g')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11d','abuela12f')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela12g" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hace una semana que reciben los resultados del examen y es el día cuando el juez va a la escuela de su nieta. Espera con mucha anticipación. </p>
+      <p>Ella llega al palacio de justicia con el juez y con mucha confusión. Ella no sabe todos los detalles de lo que pasa. Usted trata de presentarle a ella. No habla mucha, pero aprende que ella se llama Sofía. A pesar de que no es la reunión que imaginaba, es un momento especial. </p>
+      <p>Como decidieron antes, ella va a decidir con quién quiere vivir. Porque ella está muy anulada de la situación, ella decide vivir con usted porque solo hay dos personas que viven en su casa, (en comparación a los cinco que viven en la casa de la otra familia.) Aunque ella está en su custodia por el momento, hay mucho que tiene que hacer en los meses que vienen.  </p>
+      <p>Sofía dice que quiere regresar a su escuela actual mañana. Tiene que decidir si va a permitirlo. Si ella regresa, hay la posibilidad que ella va a desaparecer. También, no quiere separarla repentinamente de sus amigas y todo lo que conoce. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela12g','abuela13a')" class="btn btn-primary btn-lg center-block">Regresa a la escuela</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela12g','abuela13b')" class="btn btn-primary btn-lg center-block">No regresa a la escuela</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela9b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Es una buena idea de considerar este antes de conocerse, pero es posible que el juez tenga una opinión diferente que pueda anular su decisión. </p>
+      <p>Ahora tiene que considerar donde su nieta vivirá cuando (o si) viene de sus padres actuales. Su tiene un dormitorio extra en su casa donde ella puede vivir, pero el hermano de su yerno también tiene un dormitorio extra. Él también tiene algunos hijos cerca de la edad de su nieta. Tiene que pensar si este pueda ser un hogar mejor para ella. ¿Qué piensa? </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9b','abuela10e')" class="btn btn-primary btn-lg center-block">Su casa</button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9b','abuela10f')" class="btn btn-primary btn-lg center-block">Con la otra familia </button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9b','abuela10g')" class="btn btn-primary btn-lg center-block">Deja la decisión para su nieta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10e" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10e','abuela11a', 'abuela11e')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11e" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que no importan las opiniones de la familia de crianza o biológica porque cometieron un crimen y necesitan sacarla de su casa.</p>
+      <p>El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11e','abuela12c')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11e','abuela12d')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11f" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que no importan las opiniones de la familia de crianza o biológica porque cometieron un crimen y necesitan sacarla de su casa.</p>
+      <p>El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11f','abuela12e')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11f','abuela12f')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11g" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que no importan las opiniones de la familia de crianza o biológica porque cometieron un crimen y necesitan sacarla de su casa.</p>
+      <p>El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11g','abuela12g')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11g','abuela12f')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela9c" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Es una buena idea de reconocer las opiniones de su nieta, pero es posible que el juez tenga una opinión diferente que pueda anular la decisión de su nieta.</p>
+      <p>Ahora tiene que considerar donde su nieta vivirá cuando (o si) viene de sus padres actuales. Su tiene un dormitorio extra en su casa donde ella puede vivir, pero el hermano de su yerno también tiene un dormitorio extra. Él también tiene algunos hijos cerca de la edad de su nieta. Tiene que pensar si este pueda ser un hogar mejor para ella. ¿Qué piensa? </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9c','abuela10h')" class="btn btn-primary btn-lg center-block">Su casa</button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9c','abuela10i')" class="btn btn-primary btn-lg center-block">Con la otra familia </button>
+      </div>
+      <div class = 'col-lg-4'>
+      <button onclick="myFunction('abuela9c','abuela10j')" class="btn btn-primary btn-lg center-block">Deja la decisión para su nieta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10h" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10h','abuela11a', 'abuela11h')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10i" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10i','abuela11a', 'abuela11i')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10j" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10j','abuela11a', 'abuela11j')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11h" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que no importan las opiniones de la nieta porque ella es menor de edad y sus padres de crianza cometieron un crimen.</p>
+      <p>El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11h','abuela12c')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11h','abuela12d')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11i" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que no importan las opiniones de la nieta porque ella es menor de edad y sus padres de crianza cometieron un crimen.</p>
+      <p>El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11i','abuela12e')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11i','abuela12f')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11j" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>¡Felicidades! El examen de ADN dice que hay un 99.99% probabilidad que esta chica de quince años es la nieta de usted y la madre de su yerno. </p>
+      <p>Está muy contenta, pero ahora tiene que hacer un plan para conectar con ella. El juez dice que no importan las opiniones de la nieta porque ella es menor de edad y sus padres de crianza cometieron un crimen.</p>
+      <p>El juez dice que puede esperar una semana hasta ella regresa a la escuela para evitar la posibilidad de una discusión con sus padres de crianza. La otra opción es ir a su casa mañana para sacarla de su casa actual. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11j','abuela12g')" class="btn btn-primary btn-lg center-block">Espera una semana</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela11j','abuela12f')" class="btn btn-primary btn-lg center-block">Va mañana</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela5b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hoy es el día cuando va a la oficina de un abogado. Otras abuelas dicen que él es un recurso fantástico para hacer más conexiones y ganar la justicia. </p>
+      <p>Durante su cita, el abogado explica el proceso que usan para tratar de conectar con los nietos. Él dice que su equipo investiga continuamente para tratar de ubicar e identificar a niños apropiados. Usualmente, investiga las actas de nacimiento de los hijos de gente militar y las actas de nacimiento en general para información sospechosa. </p>
+      <p>Él dice que es un proceso lento que tiene la posibilidad de no tener resultas positivas. Sin embargo, él explica que ha tenido éxito en el pasado y con más apoyo de más abuelas, sus investigaciones pueden tener más éxito en el futuro.  </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="myFunction('abuela5b','abuela6b')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela6b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hace dos meses que tiene la primera cita con el juez. Él dice que continúa su investigación cada día, pero hasta ahora, no ha escuchado ninguna noticia detallada de los resultados de la búsqueda. Crece un poco impaciente, pero trata de mantener su esperanza. </p>
+      <p>Él se llama y dice que necesita tener otra reunión para hablar sobre su situación. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="myFunction('abuela6b','abuela7b')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela7b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hoy es el día de su reunión con el abogado. La madre de su yerno viene también para escuchar las noticias y para apoyarse. </p>
+      <p>El abogado dice que su equipo piensa que ha encontrado una chica que podría ser su nieta. Explica que será difícil identificarla para estar seguros porque necesita su ADN y más información sobre su nacimiento. También, para recuperar la información esencial tiene que o contactar la chica o encontrar otro método pero mantener la legalidad. </p>
+      <p>¿Quiere correr el riesgo de contactarla con la posibilidad que ella y su familia de crianza pueden huir del país para evitar el examen? ¿Quiere tomar la otra opción y tratar de encontrar otro método para identificarla? </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela7b','abuela9f')" class="btn btn-primary btn-lg center-block">Contactarla</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela7b','abuela8c')" class="btn btn-primary btn-lg center-block">Otro método</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="abuela10k" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora ella vive con usted, pero tiene que decidir donde ella va a asistir a la escuela durante este tiempo de transición. Su nieta dice que quiere regresar a la escuela donde asistía cuando vivía con sus padres de crianza. </p>
+      <p>Tiene que decidir si va a permitirlo. Si ella regresa, hay la posibilidad que ella va a desaparecer. También, no quiere separarla repentinamente de sus amigas y todo lo que conoce.  </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela10k','abuela11k')" class="btn btn-primary btn-lg center-block">Regresa a la escuela</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela10k','abuela11l')" class="btn btn-primary btn-lg center-block">No regresa a la escuela</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="abuela11k" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Decide conceder sus deseos de regresar para mantener una relación más o menos positiva. Ahora ella está en la escuela por el día. No sabe exactamente que vendrá en el futuro, pero tiene esperanza que puede reconciliar la situación.  </p>
+    </div>
+
+    <h1 align="center">¡Gracias por su participación!</h1>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela11l" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>En vez de regresar a su escuela, piensa que es mejor si ella se queda en casa con usted hoy. Decide traerla a la casa de su hermana para que ella puede conocerse a otros miembros de la familia.</p>
+      <p>Ella todavía está descontenta con la situación y no quiere creer en la verdad. Como no ha considerado suficiente antes, tiene que pensar más en los deseos de su nieta. Ahora tiene que tomar algún tiempo de reconsiderar como va a seguir.</p>
+    </div>
+
+    <h1 align="center">¡Gracias por su participación!</h1>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela8c" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>El abogado dice que hay algunas posibilidades de cómo puede identificarla sin su permiso. Una opción es usar detalles de su historia médica para tener más confianza sobre su identidad. Con esta información puede conseguir una orden de registro para ir a su casa con el derecho de mudarse y ganar custodia.</p>
+      <p>Después de dos meses más, el juez piensa que tiene suficiente evidencia para ganar la custodia de su nieta. Por eso, el abogado habla con un juez y planear una cita para ir a su escuela. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="myFunction('abuela8c','abuela9f')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="abuela9f" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Usted, la madre de su yerno, el abogado, y el juez llegan a la escuela de su nieta. El juez habla con el director de la escuela y se llama de su clase. Ella está muy confundida y tiene miedo de lo que va a pasar.</p>
+      <p>Después de que el juez explica la situación a su nieta, es el momento en que ella viene con su familia biológica. Tiene que decidir con quién ella vivirá por el momento. Usted y su esposo tiene un dormitorio de repuesto sino que la otra abuela tiene nietas que viva con ella cerca a la edad de su nieta.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela9f','abuela10k')" class="btn btn-primary btn-lg center-block">Su casa</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela9f','abuela10l')" class="btn btn-primary btn-lg center-block">Con la otra familia</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela4b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Aunque decidió que no quiere ir a la protesta, la madre de su yerno planeó una cena donde conoció algunas abuelas. Ahora siente más conectada con la comunidad de abuelas y piensa que tal vez puede participar en un evento en el futuro. </p>
+      <p>Ahora decide que en vez de esperar para la llamada de un adolescente, decide tratar de localizar algunos nietos posibles. Este es un trabajo acuciante y no sabe exactamente donde debe empezar. Por eso, necesita decidir si quiere ir al hospital con otras abuelas o hablar con un abogado que ha ayudado a otras abuelas. (Debe considerar el costo de un abogado también.) </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela4b','abuela5a')" class="btn btn-primary btn-lg center-block">Al hospital</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela4b','abuela5b')" class="btn btn-primary btn-lg center-block">Un abogado</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela3b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Un amigo de su vecino conoce a una mujer quien está muy involucrada con la campaña de las abuelas de Plaza de Mayo. Ella planea un día donde ustedes tres van a un café para café. </p>
+      <p>Aprende mucho durante esta cita sobre la campaña y estás emocionante para hacer más conexiones con estas abuelas. Sino que, durante la reunión, la abuela insistió que usted conecta con los otros abuelos. Ella dice que su conexión con los padres de su yerno ha sido una bendición para su búsqueda. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="myFunction('abuela3b','abuela4c')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="abuela4c" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Con el apoyo de la otra abuela, usa la información que tiene del pasado para reconectar con los padres de su yerno. Ahora solo su madre está viva y ella participa mucho en las protesta y en la campaña de las abuelas de Plaza de Mayo. Ahora tiene que seguir con la consideración de la opinión de ella también. </p>
+      <p>Ahora ustedes deciden que en vez de esperar para la llamada de un adolescente, deciden tratar de localizar algunos nietos posibles. Este es un trabajo acuciante y no sabe exactamente donde debe empezar. Por eso, necesita decidir si quiere ir al hospital con otras abuelas o hablar con un abogado que ha ayudado a otras abuelas. (Debe considerar el costo de un abogado también.)</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela4c','abuela5a')" class="btn btn-primary btn-lg center-block">Al hospital</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela4c','abuela5b')" class="btn btn-primary btn-lg center-block">Un abogado</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela2b" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Hace dos meses que trabajó con una artista para crear una historieta. La agencia con que trabajaba dice que algunas personas han llamada la agencia para más información, pero desafortunadamente los detalles de las edades no corresponden con las de su propio nieto.</p>
+      <p>Es una situación frustrante, pero tiene que perseverar. </p>
+      <p>En la mayoría, trabaja solo con su esposo para tratar de encontrarlo. Ahora, decide que necesita unirse con otros para fortalecer su búsqueda. En este momento, quiere decidir si quiere contactar a la otra pareja de abuelos de su nieto o a la comunidad de las abuelas de Plaza de Mayo. </p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela2b','abuela3a')" class="btn btn-primary btn-lg center-block">La otra pareja</button>
+      </div>
+      <div class = 'col-sm-6'>
+      <button onclick="myFunction('abuela2b','abuela3b')" class="btn btn-primary btn-lg center-block">Las abuelas de Plaza de Mayo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10f" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10f','abuela11a', 'abuela11f')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10g" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Ahora que ha considerado algunas de las decisiones difíciles, es el día cuando reciben los resultados del examen de ADN. Otra vez, está muy nerviosa.</p>
+    </div>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <button onclick="randFunc('abuela10g','abuela11a', 'abuela11g')" class="btn btn-primary btn-lg center-block">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="abuela10l" hidden>
+  <div class = 'container'>
+    <div class="jumbotron" id="abuela1">
+      <p>Porque ella está muy anulada de la situación, decide darle espacio para algunos días. Espera hasta escucha más información de la familia de su yerno sobre lo que pasará. </p>
+      <p>Tiene mucha esperanza que puede recuperar la relación. </p>
+    </div>
+
+    <h1 align="center">¡Gracias por su participación!</h1>
+
+    <div class='row'>
+      <div class = 'col-sm-12'>
+      <a href='/' class=" active btn btn-info btn-lg center-block">Regresar al comienzo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+{% endblock %}
