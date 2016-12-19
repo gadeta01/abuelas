@@ -2,42 +2,42 @@
 
 
 {% block content %}
-<body> 
+<body style="padding-bottom: 100px;"> 
 <!-- Introduction -->
-<div class="container">
-  <div class="jumbotron" id='first'>
-    <h1>Se llama Margarita Perez</h1> 
-    <p>Usted es una abuela de un nieto desaparecido. Hace quince años que su hija y su esposo desaparecen. Era enero cuando ocurrió y su hija estaba cinco meses embarazada. Ahora quiere intensificar su búsqueda para tratar de reconectar con su nieto/a y ganar la justicia para su propia familia. </p> 
-      <a onclick="myFunction('first','abuela1')"type="button" class="btn btn-primary btn-lg center-block">Haz click aqui para empezar su busqueda!</a> 
+<div class="container" id='first'> 
+  <div > <div class = "row">   <div class = "box"> <div class="col-lg-12" >
+      <h1 class="text-center">Se llama Margarita Perez</h1> 
+      <p>Usted es una abuela de un nieto desaparecido. Hace quince años que su hija y su esposo desaparecen. Era enero cuando ocurrió y su hija estaba cinco meses embarazada. Ahora quiere intensificar su búsqueda para tratar de reconectar con su nieto/a y ganar la justicia para su propia familia. </p> 
+  </div></div> </div> </div>
+
+  <div class="text-center">
+  <a onclick="myFunction('first','abuela1')"type="button" class="btn btn-default btn-lg">Haz click aqui para empezar su busqueda!</a> 
   </div>
 </div>
 
 
 
-<div id="abuela1" hidden>
-  <div class = 'container'>
-    <div class="jumbotron" id="abuela1">
+<div class="container" id="abuela1" hidden>
+  <div class="row"><div class = "box"> <div class="col-lg-12" >
       <p>Ahora tiene que hacer la decisión de cómo va a hacer la búsqueda. Reciente ha visto muchas de las mismas advertencias de otra familia que busca su familiar. Piensa que este puede funcionar, pero no puede compartir muchos detalles de su propia familia. También, ha leído algunas historietas de otras familias. En estas, se puede compartir más información, pero no tantos personas la verán. En este momento sabe que necesita hacer algo, selecciona cual forma de comunicación quiere usar.</p>
-    </div>
+  </div> </div></div>
 
-    <div class='row'>
+  <div class='row text-center'>
       <div class = 'col-sm-6'>
-      <button onclick="myFunction('abuela1','abuela2a')" class="btn btn-primary btn-lg center-block">Hacer un anuncio</button>
+      <button onclick="myFunction('abuela1','abuela2a')" class="btn btn-default btn-lg ">Hacer un anuncio</button>
       </div>
       <div class = 'col-sm-6'>
-      <button onclick="myFunction('abuela1','abuela2b')" class="btn btn-primary btn-lg center-block">Crear una historieta</button>
+      <button onclick="myFunction('abuela1','abuela2b')" class="btn btn-default btn-lg ">Crear una historieta</button>
       </div>
-    </div>
   </div>
 </div>
 
-<div id="abuela2a" hidden>
-  <div class = 'container'>
-    <div class="jumbotron" id="abuela1">
+<div class="container" id="abuela2a" hidden>
+  <div class="row"><div class = "box"> <div class="col-lg-12" >
       <p>Hace dos meses que su póster expone en las calles de la ciudad. La agencia con que trabajaba dice que algunas personas han llamado la agencia para más información, pero desafortunadamente los detalles de las edades no corresponden con las de su propio nieto.</p>
       <p>Es una situación frustrante, pero tiene que perseverar. Decidió continuar a exponer la advertencia porque aun si no ayuda a reconectar a su familia, si puede funcionar para reconectar otra familia se vale la pena. </p>
       <p>En la mayoría, trabaja solo con su esposo para tratar de encontrarlo. Ahora, decide que necesita unirse con otros para fortalecer su búsqueda. En este momento, quiere decidir si quiere contactar a los otros abuelos de su nieto o a la comunidad de las abuelas de plaza del mayo. (Sabe que puede encontrar los otros abuelos porque se conocieron muchas veces cuando su hija y su hijo se casaron) </p>
-    </div>
+    </div> </div></div>
 
     <div class='row'>
       <div class = 'col-sm-6'>
@@ -50,12 +50,11 @@
   </div>
 </div>
 
-<div id="abuela3a" hidden>
-  <div class = 'container'>
-    <div class="jumbotron" id="abuela1">
+<div class="container" id="abuela3a" hidden>
+  <div class="row"><div class = "box"> <div class="col-lg-12" >
       <p>Usa la información que tiene del pasado para reconectar con los padres de su yerno. Ahora solo su madre está viva y ella participa mucho en las protestas y en la campaña de las abuelas de plaza del mayo. Ahora tiene que seguir con la consideración de la opinión de ella también. </p>
       <p>Ella cree en la esfuerza de la comunidad de las madres y piensa que su investigación colectiva será más fuerte si mantener la fuerte conexión con las otras abuelas. Ella le invita a la protesta para el próximo jueves. ¿Quiere ir?</p>
-    </div>
+    </div> </div></div>
 
     <div class='row'>
       <div class = 'col-sm-6'>
@@ -914,5 +913,8 @@
   </div>
 </div>
 
+<hr>
+
 </body>
+
 {% endblock %}
