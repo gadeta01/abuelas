@@ -13,7 +13,7 @@ def index():
 
 @app.route('/abuela')
 def abuela():
-  return render_template("abuela1.html")
+  return render_template("abuela2.html")
 
 @app.route('/nieto')
 def nieto():
