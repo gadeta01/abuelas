@@ -1,0 +1,627 @@
+{% extends "base.html" %}
+
+{% block title %} 
+Adolescente
+{% endblock %}
+
+{% block content %}
+<body> 
+
+<!-- Introduction --> 
+  <div class="container" id='first'> 
+    <div class = "row"> <div class = "box"> <div class="col-lg-12" > 
+        <p>
+          Tú eres una adolescente de quince años. Ayer celebraste tu quinceañera con toda tu familia y tus amigos. Tus padres planearon la fiesta por casi un año. Era un día fantástico con todas las personas importantes de tu vida. El amor era tan fuerte que podrías sentirlo. Era una buena oportunidad para reconectar con los miembros de tu familia con quien no habías conversado por mucho tiempo. 
+        </p> 
+    </div></div> </div>
+
+    <div class="text-center">
+    <a onclick="randFuncThirds('first','a1', 'b1')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 1 --> 
+  <div class="container" id="a1" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Cuando esperas por el autobús, el lunes después de tu quinceañera, ves un cartel que lee, “Si tenés dudas sobre tu identidad, llamá a las Abuelas: 011 4864 3475”  Antes, cuando veías carteles como estos, no pensabas en nada. Pero hoy tienes un momentito de inseguridad. Ayer, durante tu quinceañera, te dio cuenta de que todas las mujeres en tu familia son muy bajas. Hoy en día, de la edad de quince años, tú eres la más alta de toda tu clase. Consideras que tu padre es muy alto. Decides que no debes reaccionar de manera exagerada, pero no puedes olvidarte de la sospecha.  
+        </p>
+        <p>
+          ¿Vas a hablar con sus amigos o sus padres? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a1','a2')" class="btn btn-primary btn-default btn-lg ">Amigos</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a1','b2')" class="btn btn-primary btn-default btn-lg ">Tus Padres</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id='b1' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Una semana después de tu quinceañera, terminas un examen muy muy difícil de matemáticas. Caminas a tu próxima clase. Cuando llegas al cuarto, tu profesor te dice que necesitas ir a la oficina de la escuela. No puedes pensar en una razón, pero estás nerviosa que algo malo haya pasado con tu familia. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b1','c2')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 2 --> 
+
+  <div class="container" id='a2' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hablas con tus amigas durante el almuerzo el mismo día. Les explicas la diferencia en las alturas de tu familia. Ellas rechazan la idea, y dice que es imposible que tus padres no sean tus padres biológicos. Dicen que nunca conocieron a nadie que fuera “adoptado” sin saber hasta la edad de quince años. Estás asegurada que todo va bien. Continúas tu semana con la memoria de tu familia feliz, y te olvidas de la sospecha. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a2','b1')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b2' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hablas con tus padres durante la cena el mismo día. Les explicas el cartel que viste y la discrepancia de altura entre tú y tu familia. Ellos te explican que tienen una prima lejana quien también es muy muy alta. También, expresan que te aman y que nunca te mienten. Estás asegurada que ellos te aman como los padres deben. Continúas tu semana con la memoria de tu familia feliz, y te olvidas de la sospecha. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b2','b1')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c2' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Cuando llegas a la oficina, la secretaria conocida está allí para recibirte. Ella te guía a un cuarto pequeño donde se sienta un hombre desconocido. Él lleva un traje formal y solo comparte una risa pequeña cuando entra. 
+        </p> 
+        <p>
+          El hombre dice, “Por favor, toma asiento antes de que te explique lo que pasa.”  Con hesitación, te sientas en la silla en el rincón. El señor empieza a describir un poquito de la historia de los niños desaparecidos. No puedes recordar todo porque de repente, empiezas a pensar de las posibles razones por esta lección. ¿Es una amiga tuya una hija desaparecida? ¿Tal vez es tu prima? No puedes pensar en una explicación probable.
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c2','c22')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c22' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          El abogado dice que muchos de los niños desaparecidos no tienen ninguna idea de su identidad real. Él te guía a su carro para ir a un palacio de justicia para aprender más sobre esta injusticia. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c22','a3')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 3 --> 
+  <div class="container" id="a3" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Cuando llegas al palacio, entras a una oficina de un juez. Antes de que él empiece la explicación, otra mujer entra el cuarto. Ella te dice que es una psicóloga y que está aquí para apoyarte.
+        </p>
+        <p>
+          Cuando estás a punto de concluir que todo ha sido un error, dice, “Tus padres de crianza, son apropiadores. Ellos no son tus padres biológicos. Tus abuelas biológicas están en el palacio de justicia para conocerte.” El juez explica más, pero no puedes recordar el resto. Todo es un borrón. 
+        </p>
+        <p>
+          Le pides permiso para usar el baño. 
+        </p>
+        <p>
+          Ahora tienes un momentito sola. Por un lado, quieres regresar a tus padres para escuchar la verdad sobre la situación. Por el otro lado, una parte chiquitita de ti piensa que él puede tener razón, y quieres escuchar toda la información que él tiene.  ¿Vas afuera para encontrar un teléfono para llamar a sus padres o regresas a la oficina con el juez? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a3','a4')" class="btn btn-primary btn-default btn-lg ">Llamar</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a3','b4')" class="btn btn-primary btn-default btn-lg ">Regresar</button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 4 -->
+  <div class="container" id='a4' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Corres afuera para encontrar un teléfono público. Cuando llegas, estás sin aliento y te sientes muy frenética. Llamas a tu casa y empiezas a llorar cuando tu madre contesta. Ella solo puede entender un poquito de lo que dices, pero explica que necesitas ir dos cuadras afuera de la escuela y que ella vendrá inmediatamente para recogerte. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a4','a5')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id="b4" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Cuando regresas a la oficina después de usar el baño el juez te espera con anticipación. Dice serenamente, “¿Quieres algún más tiempo para calmarte antes de que te explique toda la situación? Puedes quedarte conmigo en mi oficina por un rato”  
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b4','b8')" class="btn btn-primary btn-default btn-lg ">Un momento</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b4','c8')" class="btn btn-primary btn-default btn-lg ">Explicación de la situación</button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 5 --> 
+  <div class="container" id='a5' hidden> 
+    <div class = "row"> <div class = "box"> <div class="col-lg-12" > 
+        <p>
+          Tu madre parece nerviosa cuando la encuentras. La primera frase que dice es simplemente, “¡Rápido, rápido!” Cuando estás ‘cómoda’ en el carro, ella te dice, “¿Qué te ha dicho el juez? ¿Tienen alguna evidencia?” No sabes cómo debes responder a estas preguntas. Pensaste que ella debía consolarte en este momento. 
+        </p> 
+    </div></div> </div> 
+
+    <div class="text-center">
+    <a onclick="randFuncThirds('a5','b6', 'a6')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 6 --> 
+  <div class="container" id='a6' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Eran los más largos cinco minutos de toda tu vida, pero cuando llegan a tu casa, deseas quedarte en el carro por siempre. Tu madre dice que tu padre llegará a la casa en cinco minutos y que necesitas armar tu equipaje. No puedes entender, pero tu madre no responde a ninguna pregunta. Por eso, tratas de decidir lo que necesitas. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a6','a7')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b6' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Eran los más largos cinco minutos de toda tu vida, pero cuando llegan a tu casa, deseas quedarte en el carro por siempre. La policía ya los espera a ustedes en la calle. Antes de que puedan escaparse, los policías rodean el carro. Ellos dicen que tú y tu madre necesitan salir del carro para venir con ellos. 
+        </p> 
+        <p>
+          Después de una poca resistencia, estás en un carro de la policía y están en ruta al palacio de justicia. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b6','b7')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 7 --> 
+  <div class="container" id='a7' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Tu padre llega a casa y ustedes salen inmediatamente para el aeropuerto. Cuando llegan, no tienen billetes, pero tu padre explica al vendedor que necesitan boletos para el próximo vuelo a Colombia y no le importa el precio.
+        </p> 
+        <p>
+          Tratas de hacer muchas preguntas a sus padres, pero no responden ni dicen una sola palabra. Su vuelo sale en dos horas, y todavía no entiendes nada. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a7','a8')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id="b7" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Cuando llegas a la oficina otra vez, el mismo juez está allí y te espera con anticipación. En vez de enojarse, él dice serenamente, “¿Quieres algún tiempo para calmarte antes de que te explique toda la situación? Puedes quedarte conmigo en mi oficina por un rato”  
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b7','b8')" class="btn btn-primary btn-default btn-lg ">Un momento </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b7','c8')" class="btn btn-primary btn-default btn-lg ">Explicación de la situación</button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 8 --> 
+  <div class="container" id='a8' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hace un mes que llegan a Colombia. Tus padres alquilan una casa bonita para tu familia. Asistes a la escuela por primera vez la semana pasada. No entiendes toda la situación, pero tratas de hacer amigas nuevas aquí para continuar tu vida. 
+        </p> 
+        <p>
+          Tus padres no te permiten hablar con tus amigas de Argentina. Dicen que la mudanza fue necesaria y que debes tratar de estar contenta con tu nueva vida. 
+        </p>
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b8' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          No sabes si debes tratar de preguntar una de las muchas preguntas que tienes o debes tratar de simplemente respirar. Después de solo un poquito, el juez dice que necesita explicar más sobre la situación.
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b8','c8')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c8' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          El juez dice que cuando tú naciste, tu madre biológica estaba encarcelada por los militares y que los oficiales te secuestraron. Así crecías con los apropiadores. Explica que después de una búsqueda larguísima, tus abuelas biológicas te encontraron. Él explica mucha más con palabras oficiales que no entiendes.  
+        </p> 
+        <p>
+          Finalmente, dice que tus abuelas están aquí para conocerte. 
+        </p>
+        <p>
+          Todavía no entiendes mucho de la situación, pero quieres que el día termine, por eso aceptas conocerlas en este momento.
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c8','a9')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 9 --> 
+  <div class="container" id='a9' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Entras al cuarto donde están. En el momento de entrar, las dos sonríen y caminan a ti para abrazarte. Tú estás vacilante a causa de que no las conoces y para verlas hacer la situación muy real, una de ellas empieza a llorar y no sabes cómo debes responder. 
+        </p> 
+        <p>
+          Después de la inicial conmoción de la reunión, las dos explican como te pareces exactamente a su hijo e hija. No quieres creerlo. No puede ser que tus padres no sean tus padres biológicos. Finalmente, ellas notan que estás muy callada. 
+        </p>
+        <p>
+          El juez interrumpe la interacción y dice que necesitan hablar sobre qué pasará esta noche. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a9','a10')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 10 --> 
+  <div class="container" id='a10' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Después de una conversación larga entre el juez, la psicóloga, y tus abuelas, con sola una poquita  consideración de tus opiniones, tú y tu abuela materna manejan a su casa. 
+        </p> 
+        <p>
+          Tu abuela maneja a una parte de la ciudad que no has visitado antes. Cuando llega a su casa, parece mucha más pequeña que la tuya y las de tus amigas. 
+        </p>
+        <p>
+          Tu abuela te muestra tu dormitorio y te pide disculpas porque es tan pequeño. Dices que está bien, pero extrañas a tu dormitorio cómoda en la casa donde creciste. 
+        </p>
+        <p>
+          Ella te deja para dormir porque ya es muy tarde pero dice que pueden hablar más sobre la situación mañana.
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a10','a11')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 11 --> 
+  <div class="container" id="a11" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          La próxima mañana tu abuela te hace el desayuno. El sabor es suficiente diferente que extrañas el desayuno de tu madre de crianza, pero agradeces a tu abuela por el gesto. Cuando comen, ella dice que quiere compartir más sobre tu familia. Tiene un álbum de fotos y te pregunta si quieres verla. 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a11','a12')" class="btn btn-primary btn-default btn-lg ">Sí ahora</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a11','b12')" class="btn btn-primary btn-default btn-lg ">No estoy lista</button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 12 --> 
+  <div class="container" id="a12" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Ella tiene un álbum grande y muy lleno de fotos. Es como si ella hubiera preparado para este momento por años. La primera foto es de ella misma con su esposo. Explica que ha vivido sola en la casa por dos años después de que tu abuelo falleció. La próxima foto es de todos sus hijos. Dice que tu madre tenía dos hermanos y era la más joven. Explica que tenía un espíritu bonito y que siempre quería cambiar el mundo. También, tiene fotos de muchos otros miembros de la familia, pero no puedes recordar quienes son.
+        </p>
+        <p>
+          Aunque es un martes, tu abuela no te obliga a ir a la escuela. Explica que el psicólogo y el juez vendrán a la casa este tarde y puedes hacer lo que quieres hasta el almuerzo.
+        </p>
+        <p>
+          Piensas que tal vez es una oportunidad para escaparte por un momento para llamar a tus padres. Sin embargo, tu abuela ha hecho tantas cosas para hacerte cómoda y no quieres hacer daño a ella. 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a12','a13')" class="btn btn-primary btn-default btn-lg ">Escapar a un teléfono público</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a12','b13')" class="btn btn-primary btn-default btn-lg ">Ordena su dormitorio y hablar con su abuela</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="b12" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Ella entiende la dificultad de la situación y dice que puedes verlas cuando quieres. 
+        </p>
+        <p>
+          Aunque es un martes, tu abuela no te obliga a ir a la escuela. Explica que el psicólogo y el juez vendrán a la casa este tarde y puedes hacer lo que quieres hasta el almuerzo. 
+        </p>
+        <p>
+          Piensas que tal vez es una oportunidad para escaparte por un momento para llamar a tus padres. Sin embargo, tu abuela ha hecho tantas cosas para hacerte cómoda y no quieres hacer daño a ella. 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b12','a13')" class="btn btn-primary btn-default btn-lg ">Escapar a un teléfono público</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b12','b13')" class="btn btn-primary btn-default btn-lg ">Ordena su dormitorio y hablar con su abuela</button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 13 --> 
+  <div class="container" id='a13' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Te escurres por la sala pequeña. No sabes en cual dirección está el teléfono más cerca, por eso corres a la derecha cuando estás en la calle. 
+        </p> 
+        <p>
+          Finalmente llegas a un teléfono. No tienes mucho dinero, por eso necesitas hablar rápidamente. Cuando tu madre contesta, su tono es muy diferente. Aunque está contenta para escuchar tu voz, dice que debes tratar de escuchar a lo que dicen las autoridades. Dice que no hay nada que temer y te asegura que puedes regresar a casa pronto. Termina la conversación con “te amo mucho, nos reunimos pronto.”
+        </p>
+        <p>
+          Después de esta conversación, regresas a la casa de su abuela antes del almuerzo. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a13','a14')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b13' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Pasas una mañana agradable con tu abuela. Aprendes más sobre su vida y la vida de tu madre. Después de un almuerzo delicioso, el juez y la psicóloga llegan. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b13','a14')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 14--> 
+  <div class="container" id='a14' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          El juez y la psicóloga dicen que están en la casa de tu abuela para asegurar que estés aquí y para traerte a la casa de sus padres de crianza para recoger sus pertenencias. 
+        </p> 
+        <p>
+          Antes de que puedan salir, te piden ver tu dormitorio y hablan contigo sobre cómo estás. No puedes entender cómo puedes estar bien cuando todo esto pasa pero les dices que estás bien. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a14','a15')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 15 --> 
+  <div class="container" id='a15' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Entonces regresas a tu casa de crianza con las autoridades. Ellos dicen que tienes una media hora para recoger lo que quieres. Ellos se quedan cerca de la puerta y te dejan entrar en la casa. 
+        </p> 
+        <p>
+          Solo tu madre está en casa y quiere asegurarse que ellos no te hayan hecho daño y que tengas la comida suficiente. Ella dice que van a encontrar una manera en que puedas regresar a casa pronto. 
+        </p>
+        <p>
+          Cuando sales, ella grita, “¡Te amo!” 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a15','a16')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 16 --> 
+  <div class="container" id="a16" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Cuando regresas a la casa de tu abuela, ella te ayuda a guardar tu ropa. El dormitorio está lleno de la tensión y no quieres hablar mucho. 
+        </p>
+        <p>
+          Cuando pones tu uniforme del colegio en el armario, la actitud de tu abuela cambia inmediatamente. Está vacilante pero empieza a hablar lentamente. Explica que no vas a regresar a tu escuela anterior. Por eso, no vas a llevar el mismo uniforme.
+        </p>
+        <p>
+          Lo bueno es que ella te da la opción de empezar las clases en tu nueva escuela o esta semana o la semana que viene. Aunque no es una opción grande, te sientes como si ella te hubiera dado un poco de libertad. Todavía esperas poder regresar a tu casa de crianza.
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a16','a17')" class="btn btn-primary btn-default btn-lg ">Empezar esta semana</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a16','b17')" class="btn btn-primary btn-default btn-lg ">Empezar la semana que viene</button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 17 --> 
+  <div class="container" id='a17' hidden> 
+    <div class = "row"> <div class = "box"> <div class="col-lg-12" > 
+        <p>
+          Hoy es el día cuando vas a tu escuela nueva por primera vez.  Estás nerviosa porque nunca has asistido una escuela pública antes y no conoces a nadie. 
+        </p> 
+        <p>
+          Cuando llegas, recibes tu programa. Tus clases son similares de tus clases anteriores, pero es difícil empezar en el medio del semestre. 
+        </p>
+        <p>
+          Al fin del día, no era tan terrible como pensaste, pero estas cómoda y no sabes lo que trae el próximo día. 
+        </p>
+    </div></div> </div>
+
+    <div class="text-center">
+    <a onclick="nietoFinalRandom('a17')"type="button" class="btn btn-primary btn-default btn-lg">¡Haz clic aquí para ver cómo es tu vida 2 años después! </a> 
+    </div>
+  </div>
+
+  <div class="container" id='b17' hidden> 
+    <div class = "row"> <div class = "box"> <div class="col-lg-12" > 
+        <p>
+          A causa de que no vas a regresar a la escuela hasta la semana que viene, tienes la oportunidad de conocer a tu familia biológica. Tu abuela los invita para cenar. 
+        </p> 
+        <p>
+          Cuando cada persona llega, comenta en como te pareces a tu madre. Todos están muy simpáticos, pero no puedes imaginar que ellos serán tu familia permanente. 
+        </p>
+    </div></div> </div>
+
+    <div class="text-center">
+    <a onclick="nietoFinalRandom('b17')"type="button" class="btn btn-primary btn-default btn-lg">¡Haz clic aquí para ver cómo es tu vida 2 años después! </a> 
+    </div>
+  </div>
+
+<!-- Level 18 --> 
+  <div class="container" id='a18' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hace 2 años que empiezas una nueva vida con tu familia biológica. La transición inicial fue muy difícil y emocional, pero ahora estás integrada con tu familia biológica. Entiendes el amor que ellos tienen para ti. 
+        </p> 
+        <p>
+          Estás mucha más involucrada con tu escuela nueva que la vieja. Tienes algunas amigas cercanas que viven en el mismo barrio. También, tienes la oportunidad de mantener contacto con una amiga de tu niñez. 
+        </p>
+        <p>
+          Todavía no hay un cierre a sus padres de crianza (apropiadores), hay investigación después de investigación, pero no tiene evidencia firme para encarcelarlos. Solo tienes contacto con ellos una vez cada mes y aunque siempre reiteran que te aman y sabes que no te tratan mal, la relación que tienes con ellos es diferente ahora. 
+        </p>
+        <p>
+          Esperas asistir a la universidad después del colegio para estudiar trabajo social para ayudar a niños como tú. Sin embargo, ahorita quieres poder pasar mucho tiempo con tus amigas y tu familia. 
+        </p>
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b18' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hace 2 años que empiezas una nueva vida con tu familia biológica. La transición inicial fue muy difícil y emocional, y todavía no estás segura de tu lugar en tu vida nueva. 
+        </p> 
+        <p>
+          En relación a tu familia, es evidente que todos tratan de amarte e incluirte, pero no tienes la misma conexión como ellos tienen juntos. Durante cada evento familiar, observas e intentas encontrar conexiones. 
+        </p>
+        <p>
+          Todavía tienes pocas amigas en tus clases. Ansias la primavera que viene cuando puedas participar en el equipo de voleibol. 
+        </p>
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c18' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hace 2 años que empiezas una nueva vida con tu familia biológica. La transición han sido muy difícil y emocional, y te cansas pasar tiempo con tu familia. 
+        </p> 
+        <p>
+          La transición a tu escuela nueva ha sido muy difícil. El estilo de las clases es muy diferente y no has tenido la oportunidad de hacer muchos amigos. También, sabes que tu familia quiere ayudarte y amarte, pero no tienes una conexión con ellos tampoco. 
+        </p>
+        <p>
+          Has tratado todo lo que puedas para estar más cómoda, pero has aceptado que esta es tu vida. 
+        </p>
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+  <div class="container" id='d18' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hace 2 años que empiezas una nueva vida con tu familia biológica. 
+        </p> 
+        <p>
+          Trataste de conectar con tu familia biológica por un mes, y después decidiste que tu identidad se forma de como crecías y no de la ciencias. Por eso, tratas de estar respetuosa, pero no encajas en tu familia. 
+        </p>
+        <p>
+          Aunque es limitado, mantienes contacto con tus amigas de crianza. Ellas dicen que debes esperar hasta que puedas regresar a tu escuela y pasar más tiempos juntos. 
+        </p>
+        <p>
+          Esperas que el año que viene pase rápidamente a causa de que cuando cumplas dieciocho años, podrás dejar esta familia y regresar a tu familia de crianza. 
+        </p>
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+</body>
+
+{% endblock %}

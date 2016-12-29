@@ -17,7 +17,7 @@ def abuela():
 
 @app.route('/nieto')
 def nieto():
-  return render_template("nieto.html")
+  return render_template("nieto2.html")
 
 @app.route('/padres')
 def padres():
