@@ -13,6 +13,20 @@ function randFunc(current, next1, next2) {
   document.getElementById(current).setAttribute("hidden", true); 
 }
 
+function randFuncThree(current, next1, next2, next3) {
+  thenum = Math.floor((Math.random() * 10) + 1);
+  if (thenum > 6) {
+    document.getElementById(next1).removeAttribute("hidden");
+  } else { 
+    if (thenum > 3) {
+      document.getElementById(next2).removeAttribute("hidden");
+    } else {
+      document.getElementById(next3).removeAttribute("hidden");
+    }
+  }
+  document.getElementById(current).setAttribute("hidden", true); 
+}
+
 function randFuncThirds(current, next1, next2) {
   thenum = Math.floor((Math.random() * 9) + 1);
   if (thenum < 4) {
