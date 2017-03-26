@@ -1,0 +1,694 @@
+{% extends "base.html" %}
+
+{% block title %} 
+Abuela
+{% endblock %}
+
+{% block content %}
+<body> 
+<!-- INTRODUCTION --> 
+  <div class="container" id='first' hidden> 
+    <div class = "row"> <div class = "box"> <div class="col-lg-12" > 
+        <p>
+          Tú eres una joven adulta. Recientemente te mudaste a un apartamento nuevo para vivir cerca de tu nuevo trabajo. Fue una mudanza difícil porque tenía que dejar a tu familia y la vecindad donde creciste. Por meses, cuando pensabas en esta decisión, tu padre intentaba convencerte a quedarte en casa. No quiere estar lejos de su hija única. Por un milagro, tomaste la decisión y te mudaste. Tu padre está convencido que vas a querer regresar a casa en menos de dos meses. 
+        </p> 
+    </div></div> </div>
+    <div class="text-center">
+    <a onclick="randFuncThree('first','a1', 'b1', 'c1')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 1 --> 
+  <div class="container" id="a1" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Por suerte, por medio de la única amiga que conocías en esta ciudad, ya has conocido a muchos nuevos amigos después de solo un mes. A diferencia de tus amigos de la niñez, hablan de muchos problemas sociales. Recientemente, una noticia sobre un hijo desaparecido ha captado mucha atención del público. Por eso, hablan de la posibilidad e implicaciones de ser un hijo apropiado. 
+        </p>
+        <p>
+          Algo del caso hipotético te llama la atención. La mujer de las noticias nació en el mismo año que tú. También, tus padres nunca hablan abiertamente sobre tu parto ni de la época de la dictadura. Por eso, no sabes cómo hubieras reaccionado a noticias como estas. Ahora estás sola con tu amiga y tienes la oportunidad de hablar sobre tus sentimientos. ¿Dejas la idea porque piensas que ella pensará que estás loca o mencionas algo? 
+        </p>
+    </div> </div></div>
+
+  <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a1','c1')" class="btn btn-primary btn-default btn-lg ">Dejas la idea </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a1','b2')" class="btn btn-primary btn-default btn-lg ">Mencionas algo </button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="b1" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Algunos días pasan y finalmente puedes encontrar tu parada de autobuses con confianza. Por eso tienes algunos momentos para observar los anuncios alrededor de la parada. 
+        </p>
+        <p>
+          Uno te resalta que dice, “Si tenés dudas sobre tu identidad, llamá a las Abuelas: 011 4864 3475.” La foto de la joven te llama la atención porque algo en sus ojos se parece a ti. 
+        </p>
+        <p>
+          Día tras día, ves este anuncio y no puedes parar de pensar en la situación. Tratas de disminuir tus pensamientos porque tienes una familia que te ama. 
+        </p>
+        <p>
+          Después de algunas semanas el anuncio cambia a un sobre una nueva marca de batidos. ¿Tratas de dejar la idea o llamas a la organización de Abuelas? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b1','c1')" class="btn btn-primary btn-default btn-lg ">Dejas la idea </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b1','c2')" class="btn btn-primary btn-default btn-lg ">Aprendes más de la organización </button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="c1" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Un día, cinco minutos después de que llegas a tu apartamento después del trabajo, un funcionario llega a la puerta. 
+        </p>
+        <p>
+          Explica que tiene un orden de un juez para obtener una muestra de ADN. Dice que no puede explicarte mucho a causa de que no tiene mucha información sobre tu caso, pero se relaciona a una investigación de un secuestro y que hay dudas sobre tu identidad biológica. Dice que hay una familia que sospecha que eres la hija de su hijo desparecido. 
+        </p>
+        <p>
+          No puedes pensar cómo puede ser. Piensas, “No estaba secuestrada. Crecía en una familia.” ¿Decides dar la muestra por propia voluntad porque no puedes ver ningún daño posible? ¿Decides rechazar la idea a causa de que el gobierno no debe tener el derecho de usar tu cuerpo sin más explicación? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('c1','b3')" class="btn btn-primary btn-default btn-lg ">Darla </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('c1','c3')" class="btn btn-primary btn-default btn-lg ">Rechaza y no lo da </button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 2 --> 
+  <div class="container" id='b2' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Te armas de valor para preguntarle sobre tus sentimientos. Después de una larga conversación, tienes muchas dudas sobre tu identidad. Ella dice, “Pareces que dudas, recomiendo que llames a la organización de las Abuelas de Plaza de Mayo para organizar una cita y tratar de resolver tus dudas.”  
+        </p> 
+        <p>
+          Cuando finalmente llamas a la organización, la mujer con quien hablas era muy simpática y agradable. Ella te agradece por tu llamada y ella tiene muchas ganas de conocerte. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b2','a3')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c2' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Tienes que encontrar el número de teléfono antes de poder llamar. Finalmente pasas otro anuncio similar y lo anotas. 
+        </p> 
+        <p>
+          Cuando finalmente llamas a la organización, la mujer con quien hablas era muy simpática y agradable. Ella te agradece por tu llamada y ella tiene muchas ganas de conocerte. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c2','a3')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 3 -->
+  <div class="container" id='a3' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hoy es el día cuando vas a la oficina central de las Abuelas de Plaza de Mayo. La mujer con quien hablaste por el teléfono está allí para recibirte.  
+        </p> 
+        <p>
+          Para empezar, la otra mujer te hace preguntas básicas como tu fecha de nacimiento y otros detalles pequeños de tu niñez. Dicen que quieren hacer un perfil con tu información para añadir a su base de datos. Te solicitan una muestra de ADN para fortalecer la búsqueda. 
+        </p>
+        <p>
+          Te explican qué pasará en las semanas o meses que vienen y dicen que te van a avisar cuando tengan más información. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a3','a4')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b3' hidden> 
+    <div class = "row"> <div class = "box"> <div class="col-lg-12" > 
+        <p>
+          Ahora que has terminado el proceso de darles una muestra de ADN, tienes que esperar. Dicen que los resultados no regresan rápidamente y no pueden decirte mucha información hasta que tengan los resultados. 
+        </p> 
+    </div></div> </div>
+
+    <div class="text-center">
+    <a onclick="randFunc('b3','b4', 'e4')"type="button" class="btn btn-primary btn-default btn-lg">Continuar para ver los resultados </a> 
+    </div>
+  </div>
+
+  <div class="container" id='c3' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          El funcionario salió y no sabes lo que debes hacer. Pasan unas semanas y no has tenido el valor de hablar sobre el encuentro inesperado con tus amigos ni con tu familia. 
+        </p> 
+        <p>
+          Un día, a la misma hora que llegó el funcionario antes, hay un golpe en la puerta. Un grupo de funcionarios está allí. Dicen que tienen un orden de revisar tu apartamento para recuperar una muestra de ADN. Dicen que van a llevar tu ropa interior o tu cepillo de dientes. Lo hacen de una manera dura y no te permiten decidir lo que deben llevar para obtener el ADN. 
+        </p>
+        <p>
+          Después de solo diez o quince minutos, el incidente terminó. Estás impactada y no puedes hacer nada sin sentarte en el sofá. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c3','f4')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 4 --> 
+  <div class="container" id='a4' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Después de algunas semanas una mujer de las Abuelas te llama para decirte que tu información está integrada en el sistema de información y es disponible para las abuelas que buscan a sus nietos. 
+        </p> 
+        <p>
+          Haces un poco de tu propia investigación también para ver si puedes encontrar algo. Una pequeña parte de ti quiere encontrar algo, pero la mayoría espera que nunca encuentras nada. No puedes pensar en que pasará a tu padre si se encuentra algo. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a4','a5')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id="b4" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Después de muchos meses, un día un funcionario te llama y simplemente dice que la familia que había empezado la demanda  no es tu familia biológica. Aun así, explica que la familia con quien crecías tampoco es tu familia biológica.  
+        </p>
+        <p>
+          No sabes cómo debes responder. Ahora sabes que hay suficiente evidencia que tu familia de crianza no es tu familia biológica, pero no quieres creerlo ni pensar en las consecuencias. Es posible que tu identidad no sea lo que pensabas antes. También sabes que tu identidad puede venir de como crecías y lo que haces más que de tu ADN.
+        </p>
+        <p>
+          ¿Quieres investigar la situación por tu cuenta o tratar de olvidarte de la situación? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b4','c4')" class="btn btn-primary btn-default btn-lg ">Investigar la situación </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b4','d4')" class="btn btn-primary btn-default btn-lg ">Tratar de olvidarla </button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id='c4' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          No puedes pensar que tu familia no sea tu familia, pero quieres saber tu identidad verdadera. Por eso haces una cita con las Abuelas de Plaza de Mayo. 
+        </p> 
+        <p>
+          Durante la reunión te hacen preguntas básicas como tu fecha de nacimiento y otros detalles pequeños de tu niñez. Dicen que quieren hacer un perfil con tu información para añadir a su base de datos. Te solicitan una muestra de ADN para fortalecer la búsqueda. 
+        </p>
+        <p>
+          Te explican qué pasará en las semanas o meses que vienen y dicen que te van a avisar cuando tengan más información. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c4','a5')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='d4' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Tratas de parar de pensar en lo que implican los resultados de tu muestra de ADN. Piensas que necesitas mucho tiempo para digerir los eventos que pasan. Por eso, continuas tu vida cotidiana como usual. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('d4','b5')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id="e4" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Después de solo tres días, antes de tener la oportunidad de digerir los eventos que pasan, recibes una llamada imprevista. Una mujer del gobierno dice que a causa de que la muestra de tu ADN, han identificado a tu familia biológica. 
+        </p>
+        <p>
+          Explica que hay un juicio pendiente contra tu padre de crianza y que esta evidencia ha fortalecido la evidencia contra él. Dice que tu familia biológica quiere conocerte. 
+        </p>
+        <p>
+          No puedes creer que sea verdad. No te diste cuenta de las implicaciones de tu muestra de ADN. 
+        </p>
+        <p>
+          Por un lado, te sientes culpable. Por el otro lado no sabes cómo debes dirigirte a tus padres. La única cosa que sabes en este momento es que no puedes ir a la reunión con tu familia biológica. Por eso, tienes la oportunidad de reunirte con un abogado del juicio o hablar con tus padres antes de hablar con otra persona. 
+        </p>
+        <p>
+          ¿Qué haces? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('e4','c7')" class="btn btn-primary btn-default btn-lg ">Ir a una cita con un abogado </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('e4','d7')" class="btn btn-primary btn-default btn-lg ">Hablar con tus padres </button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="f4" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Después de solo tres días, antes de tener la oportunidad de digerir los eventos que pasan, recibes una llamada imprevista. Una mujer del gobierno dice que a causa de que la muestra de tu ADN, han identificado a tu familia biológica. 
+        </p>
+        <p>
+          Explica que puedes hacer una cita con un abogado para aprender más sobre el juicio. También, tienes la oportunidad de conocer la familia biológica, pero rechazas la idea inmediatamente. Piensas que tu identidad viene de como crecías y no de una familia biológica a la que no conoces ni que ha sido parte de tu vida. Aun así, decides planear una cita para aprender cómo puedes proteger a tus padres de crianza. 
+        </p>
+        <p>
+          ¿Quieres hablar con tus padres de crianza antes de la reunión? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('f4','c7')" class="btn btn-primary btn-default btn-lg ">Ir a la cita </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('f4','d7')" class="btn btn-primary btn-default btn-lg ">Hablar con tus padres </button>
+        </div>
+    </div>
+  </div>
+
+
+<!-- Level 5 --> 
+  <div class="container" id="a5" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Después de un poco más de un mes, recibes una llamada de las Abuelas de Plaza de Mayo. Dice que han encontrado a tu familia biológica y tiene la confirmación de la ADN. 
+        </p>
+        <p>
+          No puedes creer que sea verdad. Antes era solo una situación hipotética pero ahora tienes la confirmación que esta es la realidad de tu vida. Por un lado, quieres conocer a tu familia biológica. Por otro lado, no has hablado sobre la situación con tu familia de crianza. Hasta ahora era fácil evitar la conversación, pero ahora tienes que hablar con tu familia de crianza. 
+        </p>
+        <p>
+          No sabes lo que debes creer. ¿Quieres ir directamente a tu familia biológica para aprender lo que pasó cuando naciste y escuchar tu lado de la historia? O ¿Quieres ir a hablar con tu familia de crianza para darles la oportunidad para explicar la situación?  
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a5','a6')" class="btn btn-primary btn-default btn-lg ">Ir a tu familia biológica </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a5','b6')" class="btn btn-primary btn-default btn-lg ">Habla con padres de crianza</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="b5" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          El día antes de que iba a hablar con tu padre sobre el encuentro con el funcionario, recibes una llamada imprevista. Una mujer del gobierno dice que a causa de que la muestra de tu ADN, han identificado a tu familia biológica. Ahora te das cuenta de que no puedes ignorar esta situación.
+        </p>
+        <p>
+          Explica que puedes hacer una cita con un abogado para aprender más sobre el juicio. También, tienes la oportunidad de conocer la familia biológica. Además, quieres tener la oportunidad de hablar con tus padres para darles la oportunidad de explicar la situación. 
+        </p>
+        <p>
+          ¿Qué vas a hacer? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-4'>
+        <button onclick="myFunction('b5','e7')" class="btn btn-primary btn-default btn-lg ">Familia biológica </button>
+        </div>
+        <div class = 'col-sm-4'>
+        <button onclick="myFunction('b5','c7')" class="btn btn-primary btn-default btn-lg ">Cita con el abogado </button>
+        </div>
+        <div class = 'col-sm-4'>
+        <button onclick="myFunction('b5','d7')" class="btn btn-primary btn-default btn-lg ">Habla con tus padres </button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 6 --> 
+  <div class="container" id='a6' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Porque estás en conmoción, planeas una reunión con tu familia biológica por el próximo día. 
+        </p> 
+        <p>
+          Cuando llegas al lugar de reunión, solo tus dos abuelas biológicas están allí, las reconoces porque tenías una foto de cada una. Te identificas y las dos sonrían y empieza a llorar. 
+        </p>
+        <p>
+          Después de la reacción inicial, explican cómo han buscado por años y años e imaginaban este día muchas veces. 
+        </p>
+        <p>
+          Hablan por la mayoría de la tarde sobre tu vida y sobre sus opiniones en que pasó a tus padres biológicos. Era difícil para escuchar a causa de que sus opiniones de la dictadura eran muy diferentes de los que habías escuchado antes. También, explican que buscan justicia para todos los que han perdido nietos. 
+        </p>
+        <p>
+          Después de esta interacción, puedes entender el lado de tus abuelas, pero todavía quieres hablar con tus padres de crianza, porque no quieres creer que esto sea la verdad completa. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a6','a7')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b6' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Ahora que sabes un poquito más información, decides que necesitas ir a hablar con tus padres inmediatamente. Quieres hacerles muchas preguntas, pero no sabes cómo comenzar. Después de hacerles la primera pregunta, te paran y dicen que pueden explicar todo. 
+        </p> 
+        <p>
+          Explican que no querían decirte sobre tu adopción ni sobre el juicio hasta el momento correcto. Iban a esperar hasta que la conclusión del juicio era más firme pero ahora no parece que va a terminar bien. 
+        </p>
+        <p>
+          Después de más explicación, te vas a tu cuarto de niñez. Cuando has tenido algunos minutos para pensar en la información, tu madre entra al cuarto. Ella dice que no sabía el alcance del juicio hasta algunos meses. Tu padre intentó esconder todo para protegerte. 
+        </p>
+        <p>
+          No sabes lo que debes hacer. Por un lado siempre has tenido una relación llena de confianza con tu padre, pero ahora tienes dudas. Sientes como puedes confiar más en tu madre. 
+        </p>
+        <p>
+          Porque todavía no sabes lo que debes pensar, decides conocer a tu familia biológica. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b6','b7')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 7 --> 
+  <div class="container" id='a7' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Ahora que sabes un poquito más información, decides que necesitas ir a hablar con tus padres inmediatamente. Quieres hacerles muchas preguntas, pero no sabes cómo comenzar. Después de hacerles la primera pregunta, te paran y dicen que pueden explicar todo. 
+        </p> 
+        <p>
+          Explican que no querían decirte sobre tu adopción ni sobre el juicio hasta el momento correcto. Iban a esperar hasta que la conclusión del juicio era más firme pero ahora no parece que va a terminar bien. 
+        </p>
+        <p>
+          Después de más explicación, te vas a tu cuarto de niñez. Cuando has tenido algunos minutos para pensar en la información, tu madre entra al cuarto. Ella dice que no sabía el alcance del juicio hasta algunos meses. Tu padre intentó esconder todo para protegerte. 
+        </p>
+        <p>
+          No sabes lo que debes hacer. Por un lado siempre has tenido una relación llena de confianza con tu padre, pero ahora tienes dudas. Sientes como puedes confiar más en tu madre. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a7','a8')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b7' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Cuando llegas al lugar de reunión, solo tus dos abuelas biológicas están allí, las reconoces porque tenías una foto de cada una. Te identificas y las dos sonrían y empiezan a llorar. 
+        </p> 
+        <p>
+          Después de la reacción inicial, explican cómo han buscado por años y años e imaginaban este día muchas veces. 
+        </p>
+        <p>
+          Hablan por la mayoría de la tarde sobre tu vida y sobre sus opiniones en que pasó a tus padres biológicos. Era difícil para escuchar a causa de que sus opiniones de la dictadura eran muy diferentes de las que habías escuchado antes. También, explican que buscan justicia para todos los que han perdido nietos. 
+        </p>
+        <p>
+          Después de esta interacción, puedes entender el lado de tus abuelas, pero todavía quieres hablar con tus padres de crianza, porque no quieres creer que esto sea la verdad completa. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b7','a8')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c7' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Durante la cita con el abogado, explica mucho sobre los detalles del juicio. Usa mucha jerga para explicar los eventos. Aun así, el punto principal que recibes de la cita, era que todos dicen que tu padre es culpable de haber colaborado con la gente que torturó y desapareció a tus padres biológicos. No quieres creerlo porque él siempre te ha amado. 
+        </p> 
+        <p>
+          No puedes creerlo aunque aprendiste mucho más, no quieres creerlo hasta que escuches lo que tus padres dicen sobre la situación. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c7','d7')"type="button" class="btn btn-primary btn-default btn-lg">Ir a hablar con tus padres </a> 
+    </div>
+  </div>
+
+  <div class="container" id='d7' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Ahora que sabes un poquito más información, decides que necesitas ir a hablar con tus padres inmediatamente. Quieres hacerles muchas preguntas, pero no sabes cómo comenzar. Después de hacerles la primera pregunta, te paran y dicen que pueden explicar todo. 
+        </p> 
+        <p>
+          Explican que no querían decirte sobre tu adopción ni sobre el juicio hasta el momento correcto. Iban a esperar hasta que la conclusión del juicio era más firme pero ahora no parece que va a terminar bien. 
+        </p>
+        <p>
+          Después de más explicación, te vas a tu cuarto de niñez. Cuando has tenido algunos minutos para pensar en la información, tu madre entra al cuarto. Ella dice que no sabía el alcance del juicio hasta algunos meses. Tu padre intentó esconder todo para protegete. 
+        </p>
+        <p>
+          No sabes lo que debes hacer. Por un lado siempre has tenido una relación llena de confianza con tu padre, pero ahora tienes dudas. Sientes que puedes confiar más en tu madre. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('d7','b8')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='e7' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          A causa de que no estabas involucrada con la búsqueda de tu familia biológica, no sientes mucha conexión con ellos antes de que conocerlos. También, todo pasa tan rápido y no tienes la oportunidad de pensar en lo que implica todo. Aun así, hoy es el día cuando los conoces. 
+        </p> 
+        <p>
+          Cuando llegas al lugar de reunión, solo tus dos abuelas biológicas están allí, las reconoces porque tenías una foto de cada una. Te identificas y las dos sonrían y empiezan a llorar. 
+        </p>
+        <p>
+          Después de la reacción inicial, explican cómo han buscado por años y años e imaginaban este día muchas veces. 
+        </p>
+        <p>
+          Hablan por la mayoría de la tarde sobre tu vida y sobre sus opiniones en que pasa a tus padres biológicas. Era difícil para escuchar a causa de que sus opiniones de la dictadura eran muy diferentes de las que habías escuchado antes. También, explican que buscan justicia para todos los que han perdido nietos. 
+        </p>
+        <p>
+          Después de esta interacción, puedes entender el lado de tus abuelas, pero todavía quieres hablar con tus padres de crianza, porque no quieres creer que esto sea la verdad. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('e7','f7')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='f7' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Ahora que sabes un poquito más información, decides que necesitas ir a hablar con tus padres inmediatamente. Quieres hacerles muchas preguntas, pero no sabes cómo comenzar. Después de hacerles la primera pregunta, te paran y dicen que pueden explicar todo. 
+        </p> 
+        <p>
+          Explican que no querían decirte sobre tu adopción ni sobre el juicio hasta el momento correcto. Iban a esperar hasta que la conclusión del juicio era más firme pero ahora no parece que va a terminar bien. 
+        </p>
+        <p>
+          Después de más explicación, te vas a tu cuarto de niñez. Cuando has tenido algunos minutos para pensar en la información, tu madre entra al cuarto. Ella dice que no sabía el alcance del juicio hasta algunos meses. Tu padre intentó esconder todo para protegerte. 
+        </p>
+        <p>
+          No sabes lo que debes hacer. Por un lado siempre has tenido una relación llena de confianza con tu padre, pero ahora tienes dudas. Sientes como puedes confiar más en tu madre. 
+        </p>  
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('f7','a8')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+<!-- Level 8 --> 
+  <div class="container" id="a8" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          El juicio está programado para la semana que viene. Ahora que has escuchado de los dos lados, tu familia de crianza y tu familia biológica, no sabes qué pasará o qué es lo que quieres que pase. Tienes que decidir si quieres ir al juicio o escuchar sobre los resultados después. Por un lado quieres ir porque afecta tu vida tanto. Por el otro lado, no quieres estar entre las dos familias. 
+        </p>
+        <p>
+          ¿Qué vas a hacer? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a8','a9')" class="btn btn-primary btn-default btn-lg ">No vas al juicio </button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('a8','b9')" class="btn btn-primary btn-default btn-lg ">Vas al juicio </button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="b8" hidden>
+    <div class="row"><div class="box"> <div class="col-lg-12" >
+        <p>
+          Tus padres dicen que el juico está programado para la semana que viene.
+        </p>
+        <p>
+          Dicen que ahora que sabes, puedes decidir si quieres ir. Por un lado, quieres ir para aprender más y ver los dos lados. Por otro lado, no quieres ver a la familia que condena a tu padre o ver a tu padre más como criminal. 
+        </p>
+        <p>
+          ¿Qué vas a hacer? 
+        </p>
+    </div> </div></div>
+
+    <div class='row text-center'>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b8','c9')" class="btn btn-primary btn-default btn-lg ">No quieres ir</button>
+        </div>
+        <div class = 'col-sm-6'>
+        <button onclick="myFunction('b8','d9')" class="btn btn-primary btn-default btn-lg ">Sí, quieres ir </button>
+        </div>
+    </div>
+  </div>
+
+<!-- Level 9 --> 
+  <div class="container" id='a9' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hace una semana que pasa el juicio de tu padre. El jurado lo encontró culpable de secuestro y enfrenta una pena de dos años [¿Cuánto es realístico?]. No sabes lo que debes pensar ahora o como debe ser tu relación con tu padre. Todavía no piensas que te haya hecho daño en la manera en que te crió Aun así, había mucha evidencia contra él. 
+        </p> 
+        <p>
+          Estás muy enojada con tus padres, por eso decides dejarlos por dos o tres semanas.
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('a9','a10')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='b9' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hoy es el día del juicio de tu padre. Llegas al palacio de justicia a tiempo, no temprano, para evitar la posibilidad de hablar con un miembro de tu familia biológica o con un miembro de tu familia de crianza. No quieres tener que defender ningún lado porque no sabes lo que piensas que debe pasar. 
+        </p> 
+        <p>
+          Fue un día difícil. No tenías ninguna idea de la evidencia contra tu padre encima de la muestra de ADN. Tampoco entendías el alcance del dolor de tu familia biológica. 
+        </p>
+        <p>
+          Por fin, el jurado lo encontró culpable de secuestro y enfrenta una pena de dos años [¿Cuánto es realístico?]. La realidad de lo que ha hecho tu padre te ocurre en este momento. Todavía lo amas, pero no sabes si puedes hablar con él ni con tu madre por algunas semanas. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('b9','a10')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c9' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hace una semana que pasa el juicio de tu padre. El jurado lo encontró culpable de secuestro y enfrenta una pena de dos años. No sabes lo que debes pensar ahora o como debe ser tu relación con tu padre. Todavía no piensas que te haya hecho daño en la manera en que te crió. Aun así, había mucha evidencia contra él. 
+        </p> 
+        <p>
+          Porque no asististe al juicio, no tenías la oportunidad de ver las personalidades de tu familia biológica y tampoco quieres tener una relación con ellos porque han causado tanto daño en la familia con quien crecías. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('c9','c10')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+  <div class="container" id='d9' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Hoy es el día del juicio de tu padre. Llegas al palacio de justicia a tiempo, no temprano, para evitar la posibilidad de hablar con un miembro de tu familia biológica. Durante el juicio mantienes tu espacio de la familia biológica y te quedaste cerca de tu madre. 
+        </p> 
+        <p>
+          No puedes enfocarte en los detalles pero piensas mucha en la gravedad de la situación.
+        </p>
+        <p>
+          Por el juicio ves el dolor de la madre quien perdió a su hija y el dolor de no saber que pasó a su bebe. Aunque la bebe eres tú misma, no sientes como si fueras esa bebe ni como es tu rol de curar su dolor. 
+        </p>
+        <p>
+          Tampoco puedes soportar la imagen de tu padre como criminal. Todavía es el padre que te protegió en cada momento de tu vida. 
+        </p>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a onclick="myFunction('d9','d10')"type="button" class="btn btn-primary btn-default btn-lg">Continuar</a> 
+    </div>
+  </div>
+
+
+<!-- Level 10 --> 
+  <div class="container" id='a10' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Entiendes el dolor de tu familia biológica pero no sabes cómo ayudarles más que pasar tiempo con ellos. Por eso decides tomar tiempo para conocerlos. Todavía no te sientes completamente cómoda con toda la familia, pero intentas fortalecer la relación. 
+        </p> 
+        <p>
+          Hay una carretera larga enfrente de ti, pero solo te enfocas en cada día que viene. 
+        </p>
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+  <div class="container" id='c10' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Tu familia biológica quiere conocerte, pero no piensas que puedas perdonarles para lo que hiceron a tu padre de crianza. Sabes que sienten dolor, pero no sientes como debes curarlo y especialmente dado que te han causado tanto daño. En este momento no sabes en quien puedes confiar, pero sientes más cerca a tu madre que nunca. 
+        </p> 
+        <p>
+          Sabes que habrá dificultades en el futuro, pero ahora tratas de superar cada día. 
+        </p>
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+  <div class="container" id='d10' hidden> 
+    <div class="row"> <div class="box"> <div class="col-lg-12" > 
+        <p>
+          Después de un día largo, el jurado lo encontró culpable de secuestro y enfrenta una pena de dos años. En este momento, sientes como el futuro será difícil y no puedes pensar en más que los cinco minutos que vienen. 
+        </p> 
+    </div> </div> </div>
+
+    <div class="row text-center"> <div class="box"> <div class="col-lg-12" > 
+      <h3> 
+        ¡El fin! 
+      </h3>
+    </div> </div> </div>
+
+    <div class="text-center">
+    <a href='/' type="button" class="btn btn-primary btn-default btn-lg">Regresar al comienzo</a> 
+    </div>
+  </div>
+
+</body>
+
+{% endblock %}
