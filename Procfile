@@ -1,1 +1,1 @@
-web: gunicorn server1:app
+abuelas: python3 server1.py
